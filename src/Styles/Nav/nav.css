@@ -23,7 +23,7 @@
   -webkit-animation: 4s bgChange infinite;
           animation: 4s bgChange infinite;
   width: 10px;
-  height: 100vh;
+  height: 99vh;
   transition: 0.4s;
   z-index: 50;
 }

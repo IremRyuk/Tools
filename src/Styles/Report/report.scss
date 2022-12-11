@@ -1,0 +1,160 @@
+$color:#32e5c4;
+@mixin btns {
+    font-size: xx-large;
+    border: none;
+    border-radius: 2.4mm;
+    padding: 10px;
+    cursor: pointer;
+}
+.report{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.report-box{
+    position: absolute;
+    width: 70vw;
+    height: min-content;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 20px;
+    border-radius: 7mm;
+}
+.report-header{
+    font-size: xx-large;
+    color: $color;
+}
+.report-text{
+    margin-top: 20px;
+    resize: none;
+    width: 70%;
+    height: 400px;
+    background-color: #000;
+    border: none;
+    border-radius: 10mm;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: xx-large;
+    color: $color;
+    &:focus{
+    outline: none;
+    }
+}
+// btns
+.report-btns{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.report-reset{
+    width: 270px;
+ @include btns;
+ background-color: red;
+ transition: 0.4s;
+ &:hover{
+    width: 300px;
+ }
+}
+.report-submit{
+    width: 400px;
+    @include btns;
+    background-color: green;
+    transition: 0.2s;
+    &:hover{
+        width: 430px;
+     }
+   }
+
+
+//    resizing
+@media screen and (max-width:1000px) {
+    .report-box{
+        position: absolute;
+        width: 60vw;
+        height: min-content;
+        background-color: rgba(0, 0, 0, 0.541);
+        padding: 20px;
+        border-radius: 7mm;
+    }
+    .report-header{
+        font-size: x-large;
+        color: $color;
+    }
+    .report-text{
+        margin-top: 20px;
+        height: 300px;
+        border-radius: 7mm;
+        font-size: x-large;
+    }
+    .report-reset{
+        width: 170px;
+     @include btns;
+     background-color: red;
+     transition: 0.4s;
+     &:hover{
+        width: 200px;
+     }
+    }
+    .report-submit{
+        width: 270px;
+        @include btns;
+        background-color: green;
+        transition: 0.2s;
+        &:hover{
+            width: 300px;
+         }
+       }
+}
+@media screen and (max-width:800px) {
+    .report-box{
+        position: absolute;
+        margin-left: 30px;
+        width: 70vw;
+        height: min-content;
+        background-color: rgba(0, 0, 0, 0.541);
+        padding: 20px;
+        border-radius: 7mm;
+    }
+    .report-header{
+        font-size:large;
+        color: $color;
+    }
+    .report-text{
+        width: 90%;
+        margin-top: 20px;
+        height: 300px;
+        border-radius: 7mm;
+        font-size: large;
+    }
+    .report-btns{
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+    }
+    .report-reset{
+        width: 200px;
+     @include btns;
+     background-color: red;
+     font-size: large;
+     transition: 0.4s;
+     &:hover{
+        width: 200px;
+     }
+    }
+    .report-submit{
+        margin-top: 20px;
+        width: 200px;
+        @include btns;
+        font-size: large;
+        background-color: green;
+        transition: 0.2s;
+        &:hover{
+            width: 200px;
+         }
+       }
+}

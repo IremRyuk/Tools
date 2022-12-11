@@ -32,8 +32,8 @@ export default function Nav() {
                     </i >
                     </a>
                 </li>
-                <li className="lists"><i className="fa-solid fa-flag"/>
-                    Report</li>
+                <li className="lists"><Link to='/report' style={{textDecoration:'none',color:'#32e5c4'}}><i className="fa-solid fa-flag"/>
+                    Report</Link></li>
             </ul>
         </div>
     </div>
