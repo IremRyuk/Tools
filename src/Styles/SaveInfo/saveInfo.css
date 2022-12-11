@@ -150,4 +150,17 @@
   padding-right: 5px;
   border-radius: 2.4mm;
   cursor: pointer;
+}
+
+.showData {
+  width: 100px;
+  height: 50px;
+  border: 4px solid #32e5c4;
+  border-radius: 2.4mm;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #32e5c4;
+  cursor: pointer;
 }/*# sourceMappingURL=saveInfo.css.map */

@@ -5,24 +5,26 @@ export default function SaveInfo() {
     let [info,setInfo] = useState('')
     let [arrs,setArray] = useState([])
     let inp = useRef()
-    window.onload = function(){
-        let data = JSON.parse(localStorage.getItem('list'))
-        for(let i of Object.entries(data)){
-        let ul = document.querySelector('.listUl')
-        let li = document.createElement('li')
-        let btn = document.createElement('button')
-        btn.setAttribute('class','removeButton')
-        btn.innerHTML = 'Done'
-        btn.addEventListener('click',()=>{
-          li.classList.toggle('dones')
-        })
-        li.setAttribute('class','listLi')
-        li.append(i[1])
-        li.append(btn)
-        ul.append(li)
-        }
-    }
     // localStorage.clear()
+    // show Saved Data
+    let showData = () =>{
+      let data = JSON.parse(localStorage.getItem('list'))
+      for(let i of Object.entries(data)){
+      let ul = document.querySelector('.listUl')
+      let li = document.createElement('li')
+      let btn = document.createElement('button')
+      btn.setAttribute('class','removeButton')
+      btn.innerHTML = 'Done'
+      btn.addEventListener('click',()=>{
+        li.classList.toggle('dones')
+      })
+      li.setAttribute('class','listLi')
+      li.append(i[1])
+      li.append(btn)
+      ul.append(li)
+    }
+  }
+
 let add = (e) => {
   arrs.push(info)
     if(info === ''){
@@ -65,6 +67,9 @@ let clear = () => {
             <center>
             <i className="fa-solid fa-plus" onClick={()=>add()}/>
             </center>
+          </div>
+          <div className="showData" onClick={()=>showData()}>
+            Show
           </div>
         </div>
         <div className="list-todo">

@@ -7,27 +7,30 @@ export default function Nav() {
         <> < div className = "background" > </div>
     <div className='nav'>
         <div className='nav-menu'>
-            <p className='header'><Link to='/' style={{textDecoration:'none',color:'#32e5c4'}}>G3RP</Link></p>
+        <Link to='/' style={{textDecoration:'none',color:'#32e5c4'}}><p className='header'>G3RP</p></Link>
             <ul className="list">
+            <Link to='/' style={{textDecoration:'none',color:'#32e5c4'}}>
                 <li className="lists"><i className="fa-solid fa-house-chimney"/>
-                <Link to='/' style={{textDecoration:'none',color:'#32e5c4'}}>
-                    Home</Link></li>
+                    Home</li></Link>
                 <li className="lists cat-li">
                     <i className="fa-solid fa-list"/>
                     Category
                     <div className="categoryList">
                         <ul className="categ-list2">
-                            <li className="kira1"><Link to='/request' style={{textDecoration:'none',color:'#32e5c4'}}>Request Tool</Link></li>
-                            <li className="kira1"><Link to='/todo' style={{textDecoration:'none',color:'#32e5c4'}}>Save Personal Information</Link></li>
-                            <li className="kira1"><Link to='/news' style={{textDecoration:'none',color:'#32e5c4'}}>New Tools</Link></li>
+                        <Link to='/request' style={{textDecoration:'none',color:'#32e5c4'}}><li className="kira1">Request Tool</li></Link>
+                            <Link to='/todo' style={{textDecoration:'none',color:'#32e5c4'}}><li className="kira1">Save Personal Information</li></Link>
+                            <Link to='/tools' style={{textDecoration:'none',color:'#32e5c4'}}><li className="kira1">Tools</li></Link>
+                            <Link to='/news' style={{textDecoration:'none',color:'#32e5c4'}}><li className="kira1">New Tools</li></Link>
                         </ul>
                     </div>
                 </li>
                 <li className="lists">
+                <a className="nav-phone" href="tel:+1-925-555-0139">
                     <i className="fa-solid fa-phone">
-                        <a className="nav-phone" href="tel:+1-925-555-0139">
-                             Call Us</a>
+                        
+                             Call Us
                     </i >
+                    </a>
                 </li>
                 <li className="lists"><i className="fa-solid fa-flag"/>
                     Report</li>

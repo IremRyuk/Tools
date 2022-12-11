@@ -1,0 +1,71 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+$color: #32e5c4;
+.tools{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calcBox {
+    width: 70vw;
+    height: 50vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 4mm;
+  }
+  
+  .flexBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .inp1 {
+    margin-top: 10px;
+    border: none;
+    width: 150px;
+    height: 100px;
+    border-radius: 2.4mm;
+    padding-left: 15px;
+    color: $color;
+    font-size: xx-large;
+    background-color: black;
+  }
+  .inp1:focus {
+    outline: none;
+  }
+  
+  .into {
+    border: 2px solid black;
+    border-radius: 2.4mm;
+    width: min-content;
+    height: min-content;
+    padding: 0px 20px;
+    background-color: black;
+    color: $color;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .inp2 {
+    margin-top: 10px;
+    border: none;
+    width: 250px;
+    height: 100px;
+    border-radius: 2.4mm;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .size {
+    font-size: xx-large;
+    color: $color;
+  }
+  

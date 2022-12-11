@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    $color: #32e5c4;
 }
 .background {
     position: absolute;
@@ -12,7 +13,6 @@
     background-position: center;
     background-size: cover;
 }
-$color: #32e5c4;
 .nav {
     position: absolute;
     border: 2px solid $color;
