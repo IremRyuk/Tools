@@ -20,12 +20,11 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
 .savebox {
     position: relative;
-    width: 1000px;
-    height: 500px;
+    width: 90vw;
+    height: 70vh;
     border: 4px solid $color;
     border-radius: 4.4mm;
     background-color: rgb(46, 44, 44);
@@ -33,9 +32,11 @@ align-items: center;
     justify-content: space-around;
     align-items: center;
   }
+  // box nav 
   .oneLine {
     position: absolute;
     top: 0%;
+    left: 0%;
     width: 100%;
     height: min-content;
     display: flex;
@@ -44,6 +45,7 @@ align-items: center;
     padding: 10px;
   }
   .save-text {
+    margin: 0px;
     width: 70%;
     height: 45px;
     background-color: rgb(63, 63, 63);
@@ -55,22 +57,6 @@ align-items: center;
     color: $color;
     &:focus{
         outline: none;
-    }
-  }
-  .plus {
-    width: 50px;
-    height: 50px;
-    border: 4px solid $color;
-    border-radius: 2.4mm;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .fa-plus{
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        padding: 0px;
     }
   }
   .remove {
@@ -90,14 +76,41 @@ align-items: center;
         color: red;
     }
   }
-  
+  .plus {
+    width: 50px;
+    height: 50px;
+    border: 4px solid $color;
+    border-radius: 2.4mm;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-plus{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        padding: 0px;
+    }
+  }
+  .showData{
+    width: 100px;
+    height: 50px;
+    border: 4px solid $color;
+    border-radius: 2.4mm;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color;
+    cursor: pointer;
+  }
+  // showData
   .list-todo {
     position: absolute;
-    top: 20%;
-    left: 2%;
-    border: 2px solid black;
+    top: 15%;
+    margin-top: 100px;
     border-radius: 2.4mm;
-    width: 900px;
+    width: 90%;
     height: 350px;
     margin: 10px;
     background-color: black;
@@ -118,7 +131,7 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
 }
-.dones{
+.line-middle{
   text-decoration: line-through;
   color: red;
 }
@@ -134,15 +147,163 @@ align-items: center;
     border-radius: 2.4mm;
     cursor: pointer;
   }
-  .showData{
-    width: 100px;
-    height: 50px;
-    border: 4px solid $color;
-    border-radius: 2.4mm;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $color;
-    cursor: pointer;
+  // resizing
+  @media screen and (max-width:1200px){
+    .remove {
+      width: 40px;
+      height: 40px;
+      border: 4px solid red;
+      border-radius: 2.4mm;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-x{
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          padding: 0px;
+          color: red;
+      }
+    }
+    .plus {
+      width: 40px;
+      height: 40px;
+      border: 4px solid $color;
+      border-radius: 2.4mm;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-plus{
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          padding: 0px;
+      }
+    }
+    .showData{
+      width: 70px;
+      height: 50px;
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width:900px){
+    .savebox {
+      position: relative;
+      width: 95vw;
+      height: 70vh;
+      border: 4px solid $color;
+      border-radius: 4.4mm;
+      background-color: rgb(46, 44, 44);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .save-text {
+      width: 60%;
+      height: 45px;
+      background-color: rgb(63, 63, 63);
+      border: none;
+      border-radius: 1.4mm;
+      padding-left: 10px;
+      cursor: text;
+      font-size: 25px;
+      color: $color;
+      &:focus{
+          outline: none;
+      }
+    }
+    .remove {
+      width: 40px;
+      height: 40px;
+      border: 4px solid red;
+      border-radius: 2.4mm;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-x{
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          padding: 0px;
+          color: red;
+      }
+    }
+    .plus {
+      width: 40px;
+      height: 40px;
+      border: 4px solid $color;
+      border-radius: 2.4mm;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-plus{
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          padding: 0px;
+      }
+    }
+    .showData{
+      width: 60px;
+      height: 40px;
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width:600px){
+    .remove {
+      width: 30px;
+      height: 30px;
+      border: 4px solid red;
+      border-radius: 2.4mm;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-x{
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          padding: 0px;
+          color: red;
+      }
+    }
+    .plus {
+      width: 30px;
+      height: 30px;
+      border: 4px solid $color;
+      border-radius: 2.4mm;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-plus{
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          padding: 0px;
+      }
+    }
+    .showData{
+      width: 60px;
+      height: 30px;
+      font-size: 25px;
+    }
+    .save-text {
+      width: 40%;
+      height: 45px;
+      background-color: rgb(63, 63, 63);
+      border: none;
+      border-radius: 1.4mm;
+      padding-left: 10px;
+      cursor: text;
+      font-size: 20px;
+      color: $color;
+      &:focus{
+          outline: none;
+      }
+    }
   }

@@ -16,7 +16,7 @@ export default function SaveInfo() {
       btn.setAttribute('class','removeButton')
       btn.innerHTML = 'Done'
       btn.addEventListener('click',()=>{
-        li.classList.toggle('dones')
+        li.classList.toggle('line-middle')
       })
       li.setAttribute('class','listLi')
       li.append(i[1])
@@ -53,7 +53,6 @@ let clear = () => {
  window.location.reload()
 }
   return (
-    <div className='saveInfo'>
       <div className="saveInfoBox">
       <div className="savebox">
         <div className="oneLine">
@@ -77,7 +76,6 @@ let clear = () => {
           </ul>
         </div>
       </div>
-    </div>
     </div>
   )
 }

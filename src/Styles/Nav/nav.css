@@ -34,18 +34,23 @@
   background-color: black;
   border-left: 2px solid black;
 }
+.nav:hover .list {
+  margin-left: 0px;
+}
 
 .nav-menu {
   position: absolute;
   left: -1000%;
-  width: 150px;
+  width: 10px;
   top: 0;
   text-align: left;
   color: #32e5c4;
+  padding: 0px;
 }
 
 .nav:hover .nav-menu {
   left: 0;
+  width: 100%;
 }
 
 .nav:hover .header {
@@ -58,7 +63,6 @@
   color: #32e5c4;
   border-bottom: 5px solid #32e5c4;
   cursor: pointer;
-  padding-left: 5px;
   text-align: center;
   margin-left: -100px;
   transition: 0.4s;
@@ -66,16 +70,15 @@
 }
 
 .list {
+  margin-left: -200px;
   list-style: none;
   width: 150px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  padding: 10px;
   font-size: 18px;
   color: var(--color);
   line-height: 50px;
-  padding-left: 5px;
   transition: 0.4s;
   font-family: initial;
 }
@@ -115,13 +118,12 @@
   right: -110%;
   background-color: black;
   line-height: 70px;
-  padding: 0px;
+  padding: 0;
 }
 
 .categ-list2 {
   list-style: none;
-  padding: 0px;
-  padding-right: 5px;
+  padding: 0 5px 0 0;
   line-height: 100px;
 }
 
@@ -142,25 +144,30 @@
 }
 
 .kira1:hover {
-  text-shadow: 0px 5px 15px white;
+  text-shadow: 0 5px 15px white;
 }
 
 .socialSites {
   position: absolute;
-  bottom: 10%;
-  right: 0;
+  bottom: 0%;
+  right: 0%;
   font-size: xx-large;
   color: #32e5c4;
   width: 100px;
-  height: 150px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  z-index: 51;
 }
 
 .sites {
   margin-top: 20px;
   cursor: pointer;
-}
-.sites :hover {
-  text-shadow: 10px 5px 50px 10px white;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 10px;
+  font-size: 40px;
 }
 
 @-webkit-keyframes bgChange {
@@ -186,5 +193,51 @@
   }
   100% {
     border: 2px solid #32e5c4;
+  }
+}
+@media screen and (max-width: 900px) {
+  .socialSites {
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    font-size: xx-large;
+    color: #32e5c4;
+    width: 100px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    display: flex;
+    gap: 20px;
+  }
+  .sites {
+    margin-top: 20px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 650px) {
+  .socialSites {
+    position: absolute;
+    bottom: 0%;
+    right: 40%;
+    font-size: xx-large;
+    color: #32e5c4;
+    width: 100px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    display: flex;
+    gap: 10px;
+  }
+  .sites {
+    margin-top: 20px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding: 10px;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=nav.css.map */

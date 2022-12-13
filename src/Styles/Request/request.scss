@@ -1,55 +1,55 @@
 $color: #32e5c4;
-::placeholder{
-color: $color;
+::placeholder {
+    color: $color;
 }
-.req{
+.req {
     position: absolute;
-left: 0%;
-top: 0%;
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .req-toolBox {
-    width: 900px;
-    height: 700px;
+    width: 60vw;
+    height: min-content;
     border: 4px solid $color;
     border-radius: 4mm;
+    padding: 10px;
     background-color: rgb(44, 42, 42);
-  }
-  
-  .name-gmail {
+}
+
+.name-gmail {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
-  }
-  
-  .name,
-  .gmail {
+}
+
+.gmail,
+.name {
     background-color: black;
-    width: 300px;
+    width: 30%;
     border: none;
     height: 70px;
     padding-left: 20px;
     cursor: text;
     color: #32e5c4;
     font-size: x-large;
-    &:focus{
+    &:focus {
         outline: 2px solid aquamarine;
         outline-offset: 4px;
         color: $color;
-     
+
     }
-  }
-  
-  .text {
+}
+
+.text {
     margin-top: 40px;
-    margin-left: 15px;
-    width: 700px;
+    width: 85%;
     height: 400px;
     background-color: black;
     border: none;
@@ -57,37 +57,79 @@ align-items: center;
     color: $color;
     padding-left: 20px;
     font-size: xx-large;
-    &:focus{
+    &:focus {
         outline: 2px solid aquamarine;
         outline-offset: 4px;
         color: $color;
-     
+
     }
-  }
-  
-  .resetSend {
+}
+
+.resetSend {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-  }
-  
-  .reset {
+}
+
+.reset {
     border: none;
-    width: 200px;
+    width: 30%;
     height: 50px;
     color: white;
     background: linear-gradient(180deg, #ff0000 26.56%, rgba(255, 0, 0, 0) 100%);
     cursor: pointer;
-  }
-  
-  .send {
+}
+
+.send {
     border: none;
-    width: 300px;
+    width: 45%;
     height: 50px;
     background: linear-gradient(180deg, #32e5c4 0%, rgba(50, 229, 196, 0) 100%);
     color: white;
     cursor: pointer;
+}
+
+// resizing
+@media screen and (max-width:900px) {
+
+    .gmail,
+    .name {
+        width: 30%;
+        height: 50px;
+        font-size: large;
+    }
+    .text {
+        width: 85%;
+        height: 300px;
+        font-size: x-large;
+    }
+}
+@media screen and (max-width:650px) {
+  .req-toolBox {
+    width: 80vw;
+    height: min-content;
   }
-  
+  .name-gmail {
+    display: grid;
+    justify-content: left;
+    width: 100%;
+    height: 140px;
+    margin-top: 15px;
+}
+    .gmail,
+    .name {
+      margin-left: 10px;
+        width: 70vw;
+        height: 50px;
+        font-size: medium;
+        padding-left: 10px;
+    }
+    .text {
+        width: 90%;
+        height: 300px;
+        font-size: large;
+        padding: 0px;
+    }
+}
