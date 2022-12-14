@@ -12,7 +12,6 @@ export default function Nav() {
     }
     useEffect(()=>{
         window.addEventListener('resize',()=>{
-            window.location()
             let navPr = document.querySelector('.nav')
             setDocHeight(window.innerHeight)
             navPr.style.height = docHeight + 'px'
