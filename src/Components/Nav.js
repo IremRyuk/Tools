@@ -1,8 +1,25 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Nav/nav.css'
 
 export default function Nav() {
+    let [docHeight,setDocHeight] = useState(window.innerHeight)
+    window.onload = function(){
+        let navPr = document.querySelector('.nav')
+        window.getComputedStyle(navPr).getPropertyValue('height')
+        let naviPr2 = window.innerHeight
+        navPr.style.height = naviPr2 + 'px'
+        console.log(navPr)
+    }
+    useEffect(()=>{
+        window.addEventListener('resize',()=>{
+            let navPr = document.querySelector('.nav')
+            setDocHeight(window.innerHeight)
+            navPr.style.height = docHeight + 'px'
+            console.log(navPr)
+        })
+        
+    })
     return (
         <> < div className = "background" > </div>
     <div className='nav'>

@@ -10,7 +10,7 @@
 }
 
 .boxforPhotos {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.719);
   width: 60vw;
   height: 50vh;
   border-radius: 4mm;
