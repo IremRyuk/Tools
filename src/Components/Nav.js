@@ -16,7 +16,6 @@ export default function Nav() {
             setDocHeight(window.innerHeight)
             navPr.style.height = docHeight + 'px'
         })
-        
     })
     return (
         <>< div className = "background" ></div>
