@@ -147,30 +147,6 @@
   text-shadow: 0 5px 15px white;
 }
 
-.socialSites {
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  font-size: xx-large;
-  color: #32e5c4;
-  width: 60px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  z-index: 55;
-}
-
-.sites {
-  margin-top: 20px;
-  margin: 0px;
-  cursor: pointer;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  padding: 10px;
-  font-size: 40px;
-}
-
 @-webkit-keyframes bgChange {
   0% {
     border: 2px solid #32e5c4;
@@ -194,51 +170,5 @@
   }
   100% {
     border: 2px solid #32e5c4;
-  }
-}
-@media screen and (max-width: 900px) {
-  .socialSites {
-    position: absolute;
-    bottom: 0%;
-    right: 25%;
-    font-size: xx-large;
-    color: #32e5c4;
-    width: 100px;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    display: flex;
-    gap: 20px;
-  }
-  .sites {
-    margin-top: 20px;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    padding: 10px;
-    cursor: pointer;
-  }
-}
-@media screen and (max-width: 650px) {
-  .socialSites {
-    position: absolute;
-    bottom: 0%;
-    right: 40%;
-    font-size: xx-large;
-    color: #32e5c4;
-    width: 100px;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    display: flex;
-    gap: 10px;
-  }
-  .sites {
-    margin-top: 20px;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    padding: 10px;
-    cursor: pointer;
   }
 }/*# sourceMappingURL=nav.css.map */

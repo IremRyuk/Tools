@@ -68,4 +68,45 @@ $color: #32e5c4;
     font-size: xx-large;
     color: $color;
   }
-  
+  // resizing
+  @media screen and (max-width:900px) {
+    .calcBox {
+      width: 80vw;
+      height: min-content;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.719);
+      border-radius: 4mm;
+    }
+      .inp1 {
+    width: 100px;
+    height: 100px;
+    font-size: x-large;
+  }
+  .into {
+    font-size: x-large;
+  }
+    .inp2 {
+      width: 200px;
+      height: 100px;
+    }
+    .size {
+      font-size: x-large;
+    }
+  }
+  @media screen and (max-width:600px) {
+    .inp1 {
+  width: 50px;
+  height: 70px;
+  font-size: large;
+}
+.into {
+  font-size: large;
+}
+  .inp2 {
+    width: 100px;
+    height: 70px;
+  }
+  .size {
+    font-size: medium;
+  }
+}

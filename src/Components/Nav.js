@@ -9,19 +9,18 @@ export default function Nav() {
         window.getComputedStyle(navPr).getPropertyValue('height')
         let naviPr2 = window.innerHeight
         navPr.style.height = naviPr2 + 'px'
-        console.log(navPr)
     }
     useEffect(()=>{
         window.addEventListener('resize',()=>{
+            window.location()
             let navPr = document.querySelector('.nav')
             setDocHeight(window.innerHeight)
             navPr.style.height = docHeight + 'px'
-            console.log(navPr)
         })
         
     })
     return (
-        <> < div className = "background" > </div>
+        <>< div className = "background" ></div>
     <div className='nav'>
         <div className='nav-menu'>
         <Link to='/' style={{textDecoration:'none',color:'#32e5c4'}}><p className='header'>G3RP</p></Link>
@@ -52,25 +51,6 @@ export default function Nav() {
                 <li className="lists"><Link to='/report' style={{textDecoration:'none',color:'#32e5c4'}}><i className="fa-solid fa-flag"/>
                     Report</Link></li>
             </ul>
-        </div>
-    </div>
-    <div className="socialSites">
-        <div className="sites">
-            <i className="fa-brands fa-whatsapp">
-                <a href="tel:+1-925-555-0139"></a>
-            </i>
-        </div>
-
-        <div className="sites">
-            <i className="fa-brands fa-facebook">
-                <a href="#"></a>
-            </i>
-        </div>
-
-        <div className="sites">
-            <i className="fa-brands fa-twitter">
-                <a href="#"></a>
-            </i>
         </div>
     </div>
 </>
