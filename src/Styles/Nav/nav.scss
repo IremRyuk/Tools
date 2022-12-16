@@ -81,10 +81,6 @@ $color: #32e5c4;
     cursor: pointer;
     text-shadow: 0 0 5px white;
 }
-.lists:nth-child(4) {
-    position: fixed;
-    bottom: 0%;
-}
 .nav-phone {
     text-decoration: none;
     color: $color;
@@ -112,6 +108,9 @@ $color: #32e5c4;
     padding: 0 5px 0 0;
     line-height: 100px;
 }
+.list:hover .categoryList {
+    text-shadow: none;
+}
 .kira1 {
     height: min-content;
     padding: 10px;
@@ -119,9 +118,6 @@ $color: #32e5c4;
 }
 .kira1:nth-child(2) {
     line-height: 40px;
-}
-.list:hover .categoryList {
-    text-shadow: none;
 }
 .kira1:hover {
     text-shadow: 0 5px 15px white;

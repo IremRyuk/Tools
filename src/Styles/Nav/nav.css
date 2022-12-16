@@ -92,11 +92,6 @@
   text-shadow: 0 0 5px white;
 }
 
-.lists:nth-child(4) {
-  position: fixed;
-  bottom: 0%;
-}
-
 .nav-phone {
   text-decoration: none;
   color: #32e5c4;
@@ -128,6 +123,10 @@
   line-height: 100px;
 }
 
+.list:hover .categoryList {
+  text-shadow: none;
+}
+
 .kira1 {
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -138,10 +137,6 @@
 
 .kira1:nth-child(2) {
   line-height: 40px;
-}
-
-.list:hover .categoryList {
-  text-shadow: none;
 }
 
 .kira1:hover {
