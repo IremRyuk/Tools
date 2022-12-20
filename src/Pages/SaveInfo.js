@@ -38,7 +38,7 @@ let add = (e) => {
         btn.setAttribute('class','removeButton')
         btn.innerHTML = 'Done'
         btn.addEventListener('click',()=>{
-           li.classList.toggle('dones')
+           li.classList.toggle('done')
         })
         li.setAttribute('class','listLi')
         li.append(info)

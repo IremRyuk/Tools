@@ -166,6 +166,11 @@
   cursor: pointer;
 }
 
+.done {
+  text-decoration: line-through;
+  color: red;
+}
+
 @media screen and (max-width: 1200px) {
   .remove {
     width: 40px;

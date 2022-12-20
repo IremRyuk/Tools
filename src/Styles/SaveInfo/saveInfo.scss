@@ -145,6 +145,10 @@ align-items: center;
     border-radius: 2.4mm;
     cursor: pointer;
   }
+  .done{
+    text-decoration: line-through;
+    color: red;
+  }
   // resizing
   @media screen and (max-width:1200px){
     .remove {
